@@ -1,9 +1,9 @@
 import { useState } from "react";
-import "./App.css";
+import "./styles/App.css";
 import { Navbar } from "./components/Navbar";
 import { Footer } from "./components/Footer"; 
 import { Route, Routes } from "react-router-dom";
-import { Home, About, Contact, Products } from "./components/pages"; 
+import { Home, About, Contact, Products } from "./pages"; 
 
 
 function App() {
