@@ -8,7 +8,7 @@ dotenv.config();
 async function getProducts() {
     // const connection = await pool.getConnection();
     try{
-    const [rows] = await promisePool.execute('SELECT * FROM sql5760373.Products');
+    const [rows] = await promisePool.execute('SELECT * FROM sql5761520.products');
     // connection.release();
     return rows;
     } catch (e) {

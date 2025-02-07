@@ -22,7 +22,7 @@ nav .title {
   color: #333;
   letter-spacing: 5px;
   -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
-  line-height: 0.6em;
+  line-height: 0.5em;
   font-family: 'Playfair Display', serif;
 }
 
@@ -39,6 +39,7 @@ nav ul li a {
   display: block;
   text-decoration: none;
   color: #666;
+  font-size: large;
   padding: 0.5rem;
   margin: 0.5rem;
   border-radius: 0.5rem;
@@ -51,6 +52,37 @@ nav ul li a:not(.active):hover {
   border-radius: 0.5rem;
 }
 
+.nav-cart {
+  background-color: #fff;
+  border: 2px solid #ff6b81;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(255, 182, 193, 0.2);
+  margin-left: 1rem;
+  margin-right: 2rem;
+}
+
+.nav-cart:hover {
+  background-color: #ff6b81;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(255, 107, 129, 0.3);
+}
+
+.nav-cart:hover .material-symbols-outlined {
+  color: #fff;
+}
+
+.nav-cart .material-symbols-outlined {
+  color: #ff6b81;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
 
 nav .menu {
   position: absolute;
@@ -98,5 +130,14 @@ nav .menu span {
 
   nav ul li a {
     margin: 0.2rem 0.5rem;
+  }
+
+  .nav-cart {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .nav-cart .material-symbols-outlined {
+    font-size: 18px;
   }
 }

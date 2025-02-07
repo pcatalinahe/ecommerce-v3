@@ -22,7 +22,7 @@ export const Footer = () => {
           <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="social-link">
             <img src="/icons/instagram.png" alt="Instagram" className="social-icon" />
           </a>
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="social-link">
+          <a href="https://github.com/pcatalinahe" target="_blank" rel="noopener noreferrer" className="social-link">
             <img src="/icons/github.png" alt="GitHub" className="social-icon" />
           </a>
         </div>

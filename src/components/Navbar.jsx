@@ -16,29 +16,33 @@ export const Navbar = () => {
         Home
       </Link>
       {/* hamburger menu event to toggle state */}
-      <div className="menu" onClick={() => {
-        setMenuOpen(!menuOpen);
-      }}>
+      <div
+        className="menu"
+        onClick={() => {
+          setMenuOpen(!menuOpen);
+        }}
+      >
         <span></span>
         <span></span>
         <span></span>
       </div>
       {/* hamburger menu for responsiveness, if menuOpen is false, no class is applied, otherwise true */}
       <ul className={menuOpen ? "open" : ""}>
-
-        <li  onClick={() => setMenuOpen("")} >
+        <li onClick={() => setMenuOpen("")}>
           {/* prop "to" specifies what URL is linked */}
           <NavLink to="/products">Products</NavLink>
-          
         </li>
         {/* event closes hamburger menu on user's click */}
         <li onClick={() => setMenuOpen("")}>
           <NavLink to="/about">About</NavLink>
         </li>
         <li onClick={() => setMenuOpen("")}>
-        <NavLink to="/contact">Contact</NavLink>
+          <NavLink to="/contact">Contact</NavLink>
         </li>
       </ul>
+      <button className="nav-cart">
+        <span class="material-symbols-outlined">local_mall</span>
+      </button>
     </nav>
   );
 };

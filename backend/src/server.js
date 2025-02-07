@@ -6,7 +6,7 @@ import mysql from "mysql2/promise";
 import { promisePool } from "./database/connectionPool.js";
 import getProducts from "./database/databaseQueries.js";
 
-const port = process.env.PORT || 3004;
+const port = process.env.PORT || 3005;
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const app = express();
